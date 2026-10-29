@@ -1,4 +1,4 @@
-Set-Content -Path Dockerfile -Value @'
+
 # Stage 1: build the app with Maven
 FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
@@ -13,4 +13,3 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 COPY --from=build /app/target/calculator.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
-'@
