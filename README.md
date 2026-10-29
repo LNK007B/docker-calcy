@@ -2,7 +2,7 @@
 
 A Java servlet calculator packaged into a Docker image with a multi-stage build.
 
-![Calculator result](screenshot.png)
+![Calculator result](Screenshot.png)
 
 ## Tech Stack
 - Java 17, Servlet API, Maven
